@@ -32447,3 +32447,74 @@
   '14026': '=',
   '14027': '=' }
 [2013-09-21 19:44:42.149] [INFO] file - coding all done. 1,2
+[2013-09-22 01:20:59.206] [INFO] file - app opption setup.
+[2013-09-22 01:20:59.214] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:20:59.648] [INFO] file - controller is setup
+[2013-09-22 01:21:43.719] [INFO] file - app opption setup.
+[2013-09-22 01:21:43.725] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:21:44.136] [INFO] file - controller is setup
+[2013-09-22 01:24:18.197] [INFO] file - app opption setup.
+[2013-09-22 01:24:18.203] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:24:18.619] [INFO] file - controller is setup
+[2013-09-22 01:31:45.681] [INFO] file - app opption setup.
+[2013-09-22 01:31:45.687] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:31:46.105] [INFO] file - controller is setup
+[2013-09-22 01:33:27.661] [INFO] file - app opption setup.
+[2013-09-22 01:33:27.667] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:33:28.117] [INFO] file - controller is setup
+[2013-09-22 01:34:52.674] [INFO] file - app opption setup.
+[2013-09-22 01:34:52.680] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:34:53.095] [INFO] file - controller is setup
+[2013-09-22 01:35:00.534] [ERROR] file - ReferenceError: /Users/sekaryoushin/Desktop/programing/node/wingle_hackason/views/login.ejs:4
+    2| <html>
+    3|   <head>
+ >> 4|     <title><%= title %></title>
+    5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+    6|   </head>
+    7|   <body>
+
+title is not defined
+  at eval (<anonymous>:29:88)
+  at eval (<anonymous>:29:325)
+  at /Users/sekaryoushin/Desktop/programing/node/wingle_hackason/node_modules/ejs-locals/node_modules/ejs/lib/ejs.js:249:15
+  at Object.exports.render (/Users/sekaryoushin/Desktop/programing/node/wingle_hackason/node_modules/ejs-locals/node_modules/ejs/lib/ejs.js:287:13)
+  at Object.exports.renderFile (/Users/sekaryoushin/Desktop/programing/node/wingle_hackason/node_modules/ejs-locals/node_modules/ejs/lib/ejs.js:317:20)
+  at View.module.exports [as engine] (/Users/sekaryoushin/Desktop/programing/node/wingle_hackason/node_modules/ejs-locals/index.js:85:7)
+  at View.render (/Users/sekaryoushin/lib/node_modules/express/lib/view.js:75:8)
+  at Function.app.render (/Users/sekaryoushin/lib/node_modules/express/lib/application.js:504:10)
+  at ServerResponse.res.render (/Users/sekaryoushin/lib/node_modules/express/lib/response.js:677:7)
+  at /Users/sekaryoushin/Desktop/programing/node/wingle_hackason/routes/controller.js:15:16
+  at callbacks (/Users/sekaryoushin/lib/node_modules/express/lib/router/index.js:165:11)
+  at param (/Users/sekaryoushin/lib/node_modules/express/lib/router/index.js:139:11)
+  at pass (/Users/sekaryoushin/lib/node_modules/express/lib/router/index.js:146:5)
+  at Router._dispatch (/Users/sekaryoushin/lib/node_modules/express/lib/router/index.js:173:5)
+  at Object.router (/Users/sekaryoushin/lib/node_modules/express/lib/router/index.js:33:10)
+  at next (/Users/sekaryoushin/lib/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+  at SendStream.error (/Users/sekaryoushin/lib/node_modules/express/node_modules/connect/lib/middleware/static.js:67:37)
+  at SendStream.EventEmitter.emit (events.js:95:17)
+  at SendStream.error (/Users/sekaryoushin/lib/node_modules/express/node_modules/send/lib/send.js:144:51)
+  at SendStream.onStatError (/Users/sekaryoushin/lib/node_modules/express/node_modules/send/lib/send.js:245:48)
+  at /Users/sekaryoushin/lib/node_modules/express/node_modules/send/lib/send.js:317:26
+  at Object.oncomplete (fs.js:107:15)
+
+[2013-09-22 01:35:22.535] [INFO] file - app opption setup.
+[2013-09-22 01:35:22.542] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:35:22.890] [INFO] file - controller is setup
+[2013-09-22 01:52:38.776] [INFO] file - app opption setup.
+[2013-09-22 01:52:38.782] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:52:39.182] [INFO] file - controller is setup
+[2013-09-22 01:55:02.452] [INFO] file - app opption setup.
+[2013-09-22 01:55:02.458] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:55:02.857] [INFO] file - controller is setup
+[2013-09-22 01:55:35.348] [INFO] file - app opption setup.
+[2013-09-22 01:55:35.354] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:55:35.791] [INFO] file - controller is setup
+[2013-09-22 01:56:07.349] [INFO] file - app opption setup.
+[2013-09-22 01:56:07.355] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:56:07.706] [INFO] file - controller is setup
+[2013-09-22 01:57:30.963] [INFO] file - app opption setup.
+[2013-09-22 01:57:30.973] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:57:31.383] [INFO] file - controller is setup
+[2013-09-22 01:58:29.892] [INFO] file - app opption setup.
+[2013-09-22 01:58:29.898] [INFO] file - Master Server listening on 3000
+[2013-09-22 01:58:30.234] [INFO] file - controller is setup

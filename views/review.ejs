@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+	<meta charset="utf-8">
+	<title>復習クイズ - ひとりで行けるもん！</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le styles -->
+	<link href="/stylesheets/common/bootstrap.min.css" rel="stylesheet">
+	<link href="/stylesheets/common/bootstrap-responsive.css" rel="stylesheet">
+	<link href="/stylesheets/common/re-style.css" rel="stylesheet">
+
+	<script src="/javascripts/common/jquery-1.9.1.min.js"></script>
+	<script>
+ 	$(function(){
+		$(".q-area img").click(function(){
+			$(this).css("opacity","0.4");
+			$(this).after('<span class="q-rank">1</span>');
+		} );
+	});
+  </script>
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li>
+			<a href="/route">教える</a>
+		</li>
+		<li class="active">
+			<a href="/review">復習</a>
+		</li>
+		<li>
+			<a href="/try">トライ</a>
+		</li>
+	</ul>
+	<div class="container">
+		<h1 class="base-h1">みたじゅんばんにタッチ！</h1>
+
+ 	<div class="q-area clearfix">
+		<div class="q-touch-item">
+			<img src="/images/sample1.jpg" class="q-img"></div>
+		<div class="q-touch-item">
+			<img src="/images/sample2.jpg" class="q-img"></div>
+	</div>
+
+ 	<div class="q-area clearfix">
+		<div id="a1" class="q-touch-item">
+			<img src="/images/sample1.jpg" class="q-img"></div>
+		<div id="a2" class="q-touch-item">
+			<img src="/images/sample2.jpg" class="q-img"></div>
+	</div>
+
+ 	<div class="q-area clearfix">
+		<div id="a3" class="q-touch-item">
+			<img src="/images/sample1.jpg" class="q-img"></div>
+		<div id="a4" class="q-touch-item">
+			<img src="/images/sample2.jpg" class="q-img"></div>
+	</div>
+ 	<div class="q-area clearfix">
+		<div id="a5" class="q-touch-item">
+			<img src="/images/sample1.jpg" class="q-img">
+		</div>
+	</div>
+	<!-- .question -->
+
+</div>
+<!-- /container -->
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>トライ - ひとりで行けるもん！</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+     html { height: 100% }
+     body { height: 100%; margin: 0px; padding: 0px }
+     #map { height: 100% }
+    </style>
+
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAju4nzbenorM4ifwbt0N3foU--vR35KZo&sensor=false"></script>
+	<script type="text/javascript">
+      function initialize() {
+        //チェックポイント
+        var checkpoint1 = new google.maps.LatLng(35.647859,139.751509);
+        var checkpoint2 = new google.maps.LatLng(35.647806,139.750999);
+        var checkpoint3 = new google.maps.LatLng(35.647224,139.748403);
+        var checkpoint4 = new google.maps.LatLng(35.646682,139.747126);
+        var checkpoint5 = new google.maps.LatLng(35.645707,139.747595);
+
+        var mapOptions = {
+          center: checkpoint1,
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"),
+            mapOptions);
+
+        // ドラッグできるマーカーを表示
+        var marker1 = new google.maps.Marker({
+        position: checkpoint1,
+      title: "first checkpoint",
+      draggable: true
+    });
+        marker1.setMap(map);
+
+        var marker2 = new google.maps.Marker({
+        position: checkpoint2,
+      title: "second checkpoint",
+      draggable: true
+    });
+        marker2.setMap(map);
+
+        var marker3 = new google.maps.Marker({
+        position: checkpoint3,
+      title: "third checkpoint",
+      draggable: true
+    });
+        marker3.setMap(map);
+
+        var marker4 = new google.maps.Marker({
+        position: checkpoint4,
+      title: "fourth checkpoint",
+      draggable: true
+    });
+        marker4.setMap(map);
+
+        var marker5 = new google.maps.Marker({
+        position: checkpoint5,
+      title: "fifth checkpoint",
+      draggable: true
+    });
+        marker5.setMap(map);
+
+        // マーカーのドロップ(ドラッグ終了)時のイベント
+        google.maps.event.addListener(marker1, 'dragstart');
+        google.maps.event.addListener( marker1, 'dragend', function(ev){
+        document.getElementById('latitude1').value = ev.latLng.lat();
+        document.getElementById('longitude1').value = ev.latLng.lng();
+        });
+
+        google.maps.event.addListener(marker2, 'dragstart');
+        google.maps.event.addListener( marker2, 'dragend', function(ev){
+        document.getElementById('latitude2').value = ev.latLng.lat();
+        document.getElementById('longitude2').value = ev.latLng.lng();
+        });
+
+        google.maps.event.addListener(marker3, 'dragstart');
+        google.maps.event.addListener( marker3, 'dragend', function(ev){
+        document.getElementById('latitude3').value = ev.latLng.lat();
+        document.getElementById('longitude3').value = ev.latLng.lng();
+        });
+
+        google.maps.event.addListener(marker4, 'dragstart');
+        google.maps.event.addListener( marker4, 'dragend', function(ev){
+        document.getElementById('latitude4').value = ev.latLng.lat();
+        document.getElementById('longitude4').value = ev.latLng.lng();
+        });
+
+        google.maps.event.addListener(marker5, 'dragstart');
+        google.maps.event.addListener( marker5, 'dragend', function(ev){
+        document.getElementById('latitude5').value = ev.latLng.lat();
+        document.getElementById('longitude5').value = ev.latLng.lng();
+     });
+
+     //マーカー上に情報を表示
+     var info_window1 = new google.maps.InfoWindow;//({
+
+     //});
+     var info_window2 = new google.maps.InfoWindow({content:marker2.title});
+     var info_window3 = new google.maps.InfoWindow({content:marker3.title});
+     var info_window4 = new google.maps.InfoWindow({content:marker4.title});
+     var info_window5 = new google.maps.InfoWindow({content:marker5.title});
+
+     // clickイベントを取得するListenerを追加
+     google.maps.event.addListener(marker1, 'click', function(){
+         info_window1.setContent(
+                    // infowindo内のコンテンツ(html)を作成
+                    '<div class="infowindow1">' +
+                    '<img src="check1.png"' + '" width="75" height="75">' +
+                    '<br />' +
+                    marker1.title +
+                    '<br />' +
+                    "任意の文章" +
+                    '</div>'
+                    // ここまで
+            );
+            info_window1.open(map, marker1);
+     });
+
+     google.maps.event.addListener(marker2, 'click', function(){
+         info_window2.setContent(
+                    // infowindo内のコンテンツ(html)を作成
+                    '<div class="infowindow2">' +
+                    '<img src="check2.png"' + '" width="75" height="75">' +
+                    '<br />' +
+                    marker2.title +
+                    '<br />' +
+                    "任意の文章" +
+                    '</div>'
+                    // ここまで
+            );
+         info_window2.open(map, marker2);
+     });
+     google.maps.event.addListener(marker3, 'click', function(){
+         info_window3.setContent(
+                    // infowindo内のコンテンツ(html)を作成
+                    '<div class="infowindow3">' +
+                    '<img src="check3.png"' + '" width="75" height="75">' +
+                    '<br />' +
+                    marker3.title +
+                    '<br />' +
+                    "任意の文章" +
+                    '</div>'
+                    // ここまで
+            );
+         info_window3.open(map, marker3);
+     });
+     google.maps.event.addListener(marker4, 'click', function(){
+         info_window4.setContent(
+                    // infowindo内のコンテンツ(html)を作成
+                    '<div class="infowindow4">' +
+                    '<img src="check4.png"' + '" width="75" height="75">' +
+                    '<br />' +
+                    marker4.title +
+                    '<br />' +
+                    "任意の文章" +
+                    '</div>'
+                    // ここまで
+            );
+         info_window4.open(map, marker4);
+     });
+     google.maps.event.addListener(marker5, 'click', function(){
+         info_window5.setContent(
+                    // infowindo内のコンテンツ(html)を作成
+                    '<div class="infowindow5">' +
+                    '<img src="check5.png"' + '" width="75" height="75">' +
+                    '<br />' +
+                    marker5.title +
+                    '<br />' +
+                    "任意の文章" +
+                    '</div>'
+                    // ここまで
+            );
+         info_window5.open(map, marker5);
+     })
+  }
+    </script>
+
+	<!-- Le styles -->
+	<link href="/stylesheets/common/bootstrap.min.css" rel="stylesheet">
+	<link href="/stylesheets/common/bootstrap-responsive.css" rel="stylesheet">
+	<link href="/stylesheets/common/re-style.css" rel="stylesheet">
+
+</head>
+<body onload="initialize()">
+		<ul class="nav nav-tabs">
+			<li>
+				<a href="/route">教える</a>
+			</li>
+			<li>
+				<a href="/review">復習</a>
+			</li>
+			<li class="active">
+				<a href="/try">トライ</a>
+			</li>
+		</ul>
+
+	<div class="container">
+		<ul class="nav nav-pills inner-nav">
+			<li>
+				<a href="/try">見守り地図</a>
+			</li>
+			<li class="active">
+				<a href="/log">あしあと</a>
+			</li>
+		</ul>
+		<div class="log-area">
+			<h1 class="base-h1">到着のあしあと</h1>
+			<ul>
+				<li class="log-item clearfix">
+					<img src="assets/img/sample1.jpg" class="log-img">
+					<div class="log-text">
+						<span class="log-time">10時00分</span>
+						<span class="log-comment">チェックポイント1到着</span>
+					</div>
+				</li>
+				<li class="log-item clearfix">
+					<img src="assets/img/sample1.jpg" class="log-img">
+					<div class="log-text">
+						<span class="log-time">10時00分</span>
+						<span class="log-comment">チェックポイント1到着</span>
+					</div>
+				</li>
+				<li class="log-item clearfix">
+					<img src="assets/img/sample1.jpg" class="log-img">
+					<div class="log-text">
+						<span class="log-time">10時00分</span>
+						<span class="log-comment">チェックポイント1到着</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -20,7 +20,7 @@ class SaveLocation
   constructor : (@req, @res, @dataBase, @async, @fs) ->
     # user info -------------------
     @latitude = @req.body.latitude
-    @parallel = @req.body.longitude
+    @parallel = @req.body.parallel
     @upload = @req.files.upfile
 
     # database --------------------
