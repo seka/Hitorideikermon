@@ -53,11 +53,11 @@ class SaveLocation
   # ---- saveData --------------------------------------
   saveData : (num, bufImage, callBack) =>
     insert_obj = {
-      userid : 'fasdoijao;s'
-      SEQ : 1
-      latitude : @latitude
-      parallel : @parallel
-      pic : bufImage
+      "userid" : "test"
+      "SEQ" : "300"
+      "latitude" : @latitude
+      "parallel" : @parallel
+      "pic" : bufImage
     }
 
     saveData = @parentsTable.build(insert_obj)

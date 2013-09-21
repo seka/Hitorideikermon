@@ -7,11 +7,21 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <div class="loadform">
+      <form action="/load/location" method="post">
+
+        <input type="text"/>
+        <input type="submit" value="送信"/>
+      </form>
+    </div>
+
+    <!--
     <div class="uploadform">
       <form action="/save/location" method="post" enctype="multipart/form-data">
         <input type="file" name="upfile" style="width: 17em;"/>
         <input type="submit" value="送信"/>
       </form>
     </div>
+    -->
   </body>
 </html>
