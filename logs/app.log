@@ -1,0 +1,14 @@
+[2013-09-21 04:58:19.121] [INFO] file - app opption setup.
+[2013-09-21 04:58:19.126] [INFO] file - Master Server listening on undefined
+[2013-09-21 04:58:19.468] [INFO] file - err >  Error: Cannot find module '/Users/sekaryoushin/Desktop/programing/node/wingle_hackason/routes/controller'
+[2013-09-21 04:58:19.472] [ERROR] file - uncaughtException > Error: Cannot find module '/Users/sekaryoushin/Desktop/programing/node/wingle_hackason/routes/controller'
+  at Function.Module._resolveFilename (module.js:338:15)
+  at Function.Module._load (module.js:280:25)
+  at Module.require (module.js:364:17)
+  at require (module.js:380:17)
+  at [object Object]._onTimeout (/Users/sekaryoushin/Desktop/programing/node/wingle_hackason/app.coffee:84:7, <js>:96:32)
+  at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)
+
+[2013-09-21 04:59:24.749] [INFO] file - app opption setup.
+[2013-09-21 04:59:24.755] [INFO] file - Master Server listening on undefined
+[2013-09-21 04:59:25.122] [INFO] file - controller is setup

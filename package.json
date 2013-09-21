@@ -1,0 +1,14 @@
+{
+  "name": "wingle_hack",
+  "version": "0.10.18",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "async"  : "0.2.9",
+    "crafity-log4js" : "2.0.0",
+    "express": "3.4.0",
+    "ejs-locals": "1.0.2",
+  }
+}
