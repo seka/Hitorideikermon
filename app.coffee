@@ -11,7 +11,7 @@ AppClass = require './routes/System/appClass'
 LogClass = require './routes/System/logClass'
 SessionClass = require './routes/System/sessionClass'
 
-appConfig = new AppClass.AppConfig(appOption.dev_port, __dirname)
+appConfig = new AppClass.AppConfig(appOption.app.app_port, __dirname)
 logConfig = new LogClass.LogConfig(__dirname)
 sessionConfig = new SessionClass.SessionConfig(express, appOption)
 
@@ -58,9 +58,11 @@ app.configure ->
 
   # session -------------------
   app.use express.cookieParser sessionConfig.getSecret()
+  ###
   app.use express.session(
     secret : sessionConfig.getSecret()
   )
+  ###
 
   app.use express.methodOverride()
   app.use express.static appConfig.getPublic()

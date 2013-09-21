@@ -8,10 +8,10 @@
     "cookie_secret"  : "pxp_lab"
   },
   "database" : {
-    "dbname" : "pxp_lab",
+    "dbname" : "dekiruyo",
     "dbuser" : "root",
     "local_pass"  : "29148931",
-    "server_pass" : "Passw0rd",
+    "server_pass" : "hack3admin",
     "hostname" : "localhost",
     "port" : "3306"
   }

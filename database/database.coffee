@@ -1,6 +1,6 @@
 module.exports = (options) ->
   config = options.config.database
-  sequelize = require '../sequelize'
+  sequelize = require './node_modules/sequelize'
 
   # databaseの定義を記述する
   # database名、ユーザ、パスワード、ホストネーム、ポート
@@ -28,13 +28,22 @@ module.exports = (options) ->
   # O/Rマッパーがサポートしていない範囲のSQLを発行する
   database.seq = seq
 
-  # sample
   columns = {
-    questionNo: {type: sequelize.STRING, primaryKey: true}
-    answer: sequelize.TEXT
-    testcase: sequelize.TEXT
+    userid : {type: sequelize.STRING(30)}
+    SEQ : sequelize.INTEGER
+    latitude : sequelize.DECIMAL(20, 17)
+    parallel : sequelize.DECIMAL(20, 17)
+    pic : sequelize.BLOB
   }
-  database.answerTable = seq.define('Answer_table', columns, seq_option)
+  database.parentsTable = seq.define('parents', columns, seq_option)
+
+  columns = {
+    userid : {type: sequelize.STRING(30)}
+    SEQ : sequelize.INTEGER
+    safelatitude : sequelize.DECIMAL(20, 17)
+    safeparallel : sequelize.DECIMAL(20, 17)
+  }
+  database.safeareaTable = seq.define('safearea', columns, seq_option)
 
   return database
 # ------------------------------------

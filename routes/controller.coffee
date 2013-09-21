@@ -8,8 +8,12 @@ module.exports = (option) ->
   # ------------------------------
   # 親のルート
   # ------------------------------
-  require('./save/location').SaveLocation(option)
+  app.get '/', (req, res) ->
+    res.render 'index', {
+      title : "test"
+    }
 
+  require('./Save/SaveLocation').SaveLocationController(option)
 
   # ready msg ----------------------
   return "controller is setup"
