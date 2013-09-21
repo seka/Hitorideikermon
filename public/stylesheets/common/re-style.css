@@ -25,7 +25,12 @@ body{
 	padding:0 10px;
 }
 
+.form-horizontal{
+	margin: 40px 0;
+}
+
 .nav-tabs{
+	padding-top: 5px;
 	background-color: #73c1a0;
 	font-size: 15px;
 	text-align: center;
@@ -39,15 +44,42 @@ body{
 }
 
 .nav-tabs>li>a{
+	/*width: 100%;*/
 	display: inline-block;
-	padding: 10px;
-	/*background-color: #5aa884;*/
+	padding: 10px 15px;
+	/*border: 2px #fff solid;*/
+	background-color: #5aa884;
 }
 
 .nav-tabs>li>a:hover, .nav-tabs>li>a:focus{
 	background-color: #57a27f #57a27f #57a27f;
 }
 
+.title-logo{
+	text-align: center;
+}
+
+.enter-area{
+	padding: 20px 0;
+}
+
+.loginbtn-area{
+	padding: 10px 0;
+}
+
+.enter-btn{
+	margin-bottom:10px; 
+	padding: 20px 0 30px 0;
+}
+
+.enter-ico{
+	display: inline-block;
+	width: 30px;
+	height: 39px;
+	background: url(/images/door.png) 0 0 no-repeat;
+	background-position: 0 0;
+	padding-right: 15px;
+}
 
 .base-h1{
 	font-size: 1.9em;
@@ -61,8 +93,13 @@ body{
 	margin: 20px 0;
 }
 
-.q-area{
-
+.btn-primary{
+	background-color: #ed8a9c;
+	border-color: #db7f90 #ed8a9c #ed8a9c;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.btn-primary:hover{
+	background-color: #db7f90;
 }
 
 .q-touch-item{
@@ -80,16 +117,8 @@ body{
 }
 
 .q-img{
-	/*position: relative;*/
-	/*top: 50px;*/
-	/*left: -20px;*/
 	width: 100%;
 	display: inline-block;
-/*	-webkit-transform: rotate( 90deg );
-	   -moz-transform: rotate( 90deg );
-	    -ms-transform: rotate( 90deg );
-	     -o-transform: rotate( 90deg );
-	        transform: rotate( 90deg );*/
 }
 
 .q-rank{
@@ -97,10 +126,8 @@ body{
 	padding: 0;
 	position: relative;
 	top: -130px;
-	/*display: block;*/
 	color: #dd5966;
 	font-size: 4em;
-	/*overflow: hidden;*/
 }
 
 
@@ -109,19 +136,29 @@ body{
 }
 
 .chil-arrive{
-
+	font-size: 24px;
+	padding: 50px 0 60px 0;
 }
 
 .chil-help{
+	font-size: 24px;
+	padding: 30px 0 50px 0;
+}
 
+
+.arrive-ico,
+.help-ico{
+	display: inline-block;
+	height: 51px;
+	width: 47px;
 }
 
 .arrive-ico{
-
+	background: url(/images/person1.png) 0 0 no-repeat;
 }
 
 .help-ico{
-
+	background: url(/images/person2.png) 0 0 no-repeat;
 }
 
 .nav-pills{
@@ -131,30 +168,47 @@ body{
 
 .nav-pills>li>a{
 	padding: 15px 0;
+	color: #34495e;
+	background-color: #eeeeee;
+}
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover,
+.nav-pills>.active>a:focus{
+	background-color: #ed8a9c;
 }
 
 .log-item{
 	display: block;
 	width: 100%;
 	padding: 20px 0;
+	border-bottom: 2px #c3c2b9 dashed;
 }
 
-.log-img{
-	width: 50%;
-	float:left;
-	padding-right:10px;
+.log-item:last-child{
+	border-bottom: 0;
 }
 
 .log-text{
-	font-size:20px;
+	position: relative;
+	top: 10px;
+}
+
+.log-img{
+	width: 25%;
+	float: left;
+	padding-right: 20px;
 }
 
 .log-time{
+	font-size: 25px;
 	display: block;
 	margin: 10px 0;
+	color: #57a17f;
 }
 
 .log-comment{
+	font-size: 18px;
 	display: block;
 }
 .log
