@@ -28,6 +28,7 @@ module.exports = (options) ->
   # O/Rマッパーがサポートしていない範囲のSQLを発行する
   database.seq = seq
 
+  # database オブジェクトの定義
   columns = {
     userid : {type: sequelize.STRING(30)}
     SEQ : sequelize.INTEGER
@@ -44,6 +45,18 @@ module.exports = (options) ->
     safeparallel : sequelize.DECIMAL(20, 17)
   }
   database.safeareaTable = seq.define('safearea', columns, seq_option)
+
+  columns = {
+    userid : {type: sequelize.STRING(30)}
+    shootseq : sequelize.INTEGER
+    shootlatitude : sequelize.DECIMAL(20, 17)
+    shootparalled : sequelize.DECIMAL(20, 17)
+    shootpic : sequelize.BLOB
+    regtime : sequelize.DATE
+  }
+  database.childShootTable = seq.define('childshoot', columns, seq_option)
+
+
 
   return database
 # ------------------------------------

@@ -8,13 +8,6 @@ module.exports = (option) ->
   # ------------------------------
   # 親のルート
   # ------------------------------
-  ###
-  app.get '/', (req, res) ->
-    res.render 'login', {
-      title : "test"
-    }
-  ###
-  #
   app.get '/', (req, res) ->
     res.render 'index', {
       title : "test"
@@ -22,6 +15,13 @@ module.exports = (option) ->
 
   require('./Save/SaveLocation').SaveLocationController(option)
   require('./Load/LoadLocation').LoadLocationController(option)
+  require('./Inform/InformChild').InformChildController(option)
+
+  # ------------------------------
+  # 子供のルート
+  # ------------------------------
+  require('./Arrive/InformArrive').InformArriveController(option)
+
 
 
 

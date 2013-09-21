@@ -1,31 +1,35 @@
 # ---- main --------------------------------------------------
 exports.main = (req, res, dataBase) ->
   async = require 'async'
-  loadLocation = new LoadLocation(req, res, dataBase, async)
+  fs = require 'fs'
+  informChild = new InformChild(req, res, dataBase, fs)
 
   async.series([
-    loadLocation.getImage
-    , loadLocation.resStatusJson
+    informChild.getTweet
+    , informChild.resStatusJson
   ], (err, result) ->
     if (err)
       throw err
       res.redirect '/'
     console.log "coding all done. #{result}"
   )
-class LoadLocation
-  constructor : (@req, @res, @dataBase, @async) ->
+
+class InformChild
+  constructor : (@req, @res, @dataBase, @fs, ) ->
     # user info -------------------
-    @userid = "test"
-    @resJson = {}
-    @pics = []
+    @userid = @req.body.username
+    @latitude = @req.body.latitude
+    @parallel = @req.body.longitude
+    @upload = @req.files.upfile
+    @resJson = []
 
     # database --------------------
-    @parentsTable = @dataBase.parentsTable
+    @parentsTable = @dataBase.informChildTable
 
-  # getImage ----------
-  # 画像リストの取得
-  getImage : (callBack) =>
-    @parentsTable.findAll(
+  # getTweet ----------
+  # 子供のつぶやいたリストの取得
+  getTweet : (callBack) =>
+    @informChildTable.findAll(
       where : {
         userid : @userid
       }
@@ -33,12 +37,14 @@ class LoadLocation
       if (columns[0]?)
         for column, i in columns
           @resJson[i] = {
-            seq : column.seq
-            pic : new String(column.pic)
+            latitude : column.shootlatitude
+            paralled : column.shootparalled
+            shootpic : new String(column.pic)
+            regtime : column.time
           }
       callBack(null, 1)
     .error (err) ->
-      console.log "load parentsTable Err >> #{err}"
+      console.log "load informChildTable Err >> #{err}"
 
   # ---- resStatus -------------------------------------
   resStatusJson : (callBack) =>
