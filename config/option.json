@@ -1,16 +1,16 @@
 {
   "app"     : {
-    "dev_port" : 443,
-    "app_port" : 3000
+    "dev_port" : 3001,
+    "app_port" : 3001
   },
   "session" : {
-    "session_secret" : "pxp_lab",
-    "cookie_secret"  : "pxp_lab"
+    "session_secret" : "pxp_ss",
+    "cookie_secret"  : "pxp_ss"
   },
   "database" : {
     "dbname" : "dekiruyo",
-    "dbuser" : "root",
-    "local_pass"  : "29148931",
+    "dbuser" : "dekiruyo",
+    "local_pass"  : "hack3admin",
     "server_pass" : "hack3admin",
     "hostname" : "localhost",
     "port" : "3306"

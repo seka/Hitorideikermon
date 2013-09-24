@@ -76,7 +76,7 @@ body{
 	display: inline-block;
 	width: 30px;
 	height: 39px;
-	background: url(/images/door.png) 0 0 no-repeat;
+	background: url(/dekiru/images/door.png) 0 0 no-repeat;
 	background-position: 0 0;
 	padding-right: 15px;
 }
@@ -154,11 +154,11 @@ body{
 }
 
 .arrive-ico{
-	background: url(/images/person1.png) 0 0 no-repeat;
+	background: url(/dekiru/images/person1.png) 0 0 no-repeat;
 }
 
 .help-ico{
-	background: url(/images/person2.png) 0 0 no-repeat;
+	background: url(/dekiru/images/person2.png) 0 0 no-repeat;
 }
 
 .nav-pills{

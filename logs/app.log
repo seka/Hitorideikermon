@@ -32869,3 +32869,67 @@ title is not defined
 [2013-09-22 07:28:11.286] [INFO] file - app opption setup.
 [2013-09-22 07:28:11.293] [INFO] file - Master Server listening on 3000
 [2013-09-22 07:28:11.706] [INFO] file - controller is setup
+[2013-09-22 07:47:58.993] [INFO] file - app opption setup.
+[2013-09-22 07:47:58.999] [INFO] file - Master Server listening on undefined
+[2013-09-22 07:47:59.575] [INFO] file - controller is setup
+[2013-09-22 07:48:32.891] [INFO] file - app opption setup.
+[2013-09-22 07:48:32.895] [INFO] file - Master Server listening on 3001
+[2013-09-22 07:48:33.168] [INFO] file - controller is setup
+[2013-09-22 09:15:49.967] [INFO] file - app opption setup.
+[2013-09-22 09:15:49.972] [INFO] file - err >  Error: listen EADDRINUSE
+[2013-09-22 09:15:49.974] [ERROR] file - uncaughtException > Error: listen EADDRINUSE
+  at errnoException (net.js:901:11)
+  at Server._listen2 (net.js:1039:14)
+  at listen (net.js:1061:10)
+  at Server.listen (net.js:1127:5)
+  at Object.<anonymous> (/home/sekaryo/app/wingle_hackason/app.coffee:76:32, <js>:82:10)
+  at Object.<anonymous> (/home/sekaryo/app/wingle_hackason/app.coffee:1:1, <js>:107:4)
+  at Module._compile (module.js:456:26)
+
+[2013-09-22 09:17:57.996] [INFO] file - app opption setup.
+[2013-09-22 09:17:58.002] [INFO] file - err >  Error: listen EADDRINUSE
+[2013-09-22 09:17:58.004] [ERROR] file - uncaughtException > Error: listen EADDRINUSE
+  at errnoException (net.js:901:11)
+  at Server._listen2 (net.js:1039:14)
+  at listen (net.js:1061:10)
+  at Server.listen (net.js:1127:5)
+  at Object.<anonymous> (/home/sekaryo/app/wingle_hackason/app.coffee:76:32, <js>:82:10)
+  at Object.<anonymous> (/home/sekaryo/app/wingle_hackason/app.coffee:1:1, <js>:107:4)
+  at Module._compile (module.js:456:26)
+
+[2013-09-22 09:18:17.325] [INFO] file - app opption setup.
+[2013-09-22 09:18:17.330] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:18:17.612] [INFO] file - controller is setup
+[2013-09-22 09:27:58.208] [INFO] file - app opption setup.
+[2013-09-22 09:27:58.213] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:27:58.487] [INFO] file - controller is setup
+[2013-09-22 09:28:22.207] [INFO] file - app opption setup.
+[2013-09-22 09:28:22.212] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:28:22.675] [INFO] file - controller is setup
+[2013-09-22 09:30:27.770] [INFO] file - app opption setup.
+[2013-09-22 09:30:27.774] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:30:28.040] [INFO] file - controller is setup
+[2013-09-22 09:32:31.538] [INFO] file - app opption setup.
+[2013-09-22 09:32:31.542] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:32:31.821] [INFO] file - controller is setup
+[2013-09-22 09:33:05.562] [INFO] file - app opption setup.
+[2013-09-22 09:33:05.566] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:33:05.839] [INFO] file - controller is setup
+[2013-09-22 09:35:49.074] [INFO] file - app opption setup.
+[2013-09-22 09:35:49.078] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:35:49.353] [INFO] file - controller is setup
+[2013-09-22 09:42:36.667] [INFO] file - app opption setup.
+[2013-09-22 09:42:36.671] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:42:36.953] [INFO] file - controller is setup
+[2013-09-22 09:44:07.641] [INFO] file - app opption setup.
+[2013-09-22 09:44:07.645] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:44:07.925] [INFO] file - controller is setup
+[2013-09-22 09:48:22.011] [INFO] file - app opption setup.
+[2013-09-22 09:48:22.015] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:48:22.294] [INFO] file - controller is setup
+[2013-09-22 09:50:08.649] [INFO] file - app opption setup.
+[2013-09-22 09:50:08.653] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:50:08.929] [INFO] file - controller is setup
+[2013-09-22 09:50:29.393] [INFO] file - app opption setup.
+[2013-09-22 09:50:29.397] [INFO] file - Master Server listening on 3001
+[2013-09-22 09:50:29.678] [INFO] file - controller is setup

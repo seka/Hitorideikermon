@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>ひとりで行けるもん！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="/dekiru/stylesheets/common/bootstrap.min.css" rel="stylesheet">
+    <link href="/dekiru/stylesheets/common/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/dekiru/stylesheets/common/re-style.css" rel="stylesheet">
+
+</head>
+  <body>
+    <div class="enter-area">
+		<h1 class="title-logo"><img src="/dekiru/images/logo.png" width="450" height="68" alt="ひとりで行けるもん！"></h1>
+		<form class="form-horizontal" method="POST" action="child_check.php">
+            <div class="control-group">
+              <label class="control-label" for="inputEmail">ユーザID</label>
+              <div class="controls">
+                <input type="text" id="inputEmail" placeholder="ID" name="userid">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputPassword">パスワード</label>
+              <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password" name="pass">
+              </div>
+            </div>
+    	<div class="loginbtn-area">
+			<button class="btn btn-large btn-success btn-block enter-btn" type="submit"><i class="enter-ico"></i>はいる</button>
+			<a href="top_parent.html">ご両親のページ</a>
+		</div>
+          </form>
+    </div> <!-- /container -->
+  </body>
+</html>

@@ -11,21 +11,19 @@ module.exports = (option) ->
   ###
   app.get '/', (req, res) ->
     res.render 'index', {
-      title : "test"
+      title : "login"
     }
   ###
 
   app.get '/', (req, res) ->
-    res.render 'login', {
-      title : "test"
-    }
+    res.render 'top'
 
-  app.get '/route', (req, res) ->
+  app.get '/dekiru/route', (req, res) ->
     res.render 'route'
 
   require('./Save/SaveLocation').SaveLocationController(option)
 
-  app.get '/review', (req, res) ->
+  app.get '/dekiru/review', (req, res) ->
     res.render 'review'
 
   require('./Load/LoadLocation').LoadLocationController(option)
@@ -33,7 +31,7 @@ module.exports = (option) ->
   app.get '/try', (req, res) ->
     res.render 'try'
 
-  app.get '/log', (req, res) ->
+  app.get '/dekiru/log', (req, res) ->
     res.render 'log'
 
   require('./Inform/InformChild').InformChildController(option)
@@ -41,7 +39,7 @@ module.exports = (option) ->
   # ------------------------------
   # 子供のルート
   # ------------------------------
-  app.get '/children', (req, res) ->
+  app.get '/dekiru/children', (req, res) ->
     res.render 'children'
 
   require('./Arrive/InformArrive').InformArriveController(option)

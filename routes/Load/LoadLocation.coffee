@@ -1,7 +1,7 @@
 exports.LoadLocationController = (option) ->
   app = option.app
   dataBase = option.database
-  app.post '/load/location', (req, res, next) ->
+  app.post '/dekiru/load/location', (req, res, next) ->
     saveLocation = require '../../service/Load/LoadLocation'
     saveLocation.main(req, res, dataBase)
 

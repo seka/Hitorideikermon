@@ -9,6 +9,6 @@
     "async"  : "0.2.9",
     "crafity-log4js" : "2.0.0",
     "express": "3.4.0",
-    "ejs-locals": "1.0.2",
+    "ejs-locals": "1.0.2"
   }
 }
